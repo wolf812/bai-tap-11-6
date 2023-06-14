@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+</head>
+
+<body>
+    <script>
+        let arrInt = [];
+        let row, col;
+        row = +prompt("Nhập số dòng n");
+        col = +prompt("Nhập số cột m");
+
+        // dòng
+        for (let i = 0; i < row; i++) {
+            let arrRow = [];
+            //cột
+            for (let j = 0; j < col; j++) {
+                let number = +prompt("Nhập vào 1 số: ");
+                arrRow.push(number);
+            }
+            arrInt.push(arrRow);
+
+        }
+        console.log(arrInt);
+
+
+        // các phần tử nằm trên đường chéo chính
+        console.log("Đường chéo chính");
+        let sum = 0;
+        if (row == col) {
+            for (let i = 0; i < row; i++) {
+                for (let j = 0; j < col; j++) {
+                    if (i == j) {
+                        sum += arrInt[i][j];
+                    }
+                }
+            }
+            console.log("Tổng = ", sum);
+
+
+        } else {
+            console.log("mảng không có đường chéo chính ");
+        }
+    </script>
+
+</body>
+
+</html>

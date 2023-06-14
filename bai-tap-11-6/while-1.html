@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+</head>
+
+<body>
+    <script>
+        let n = +prompt("Nhập vào 1 số nguyên dương");
+        let i = 1;
+        let tong = 0;
+        while (i < n) {
+            if (i % 3 == 0 && i % 5 != 0) {
+                console.log(i);
+                tong += i;
+            }
+            i++;
+
+
+
+        }
+        console.log("tổng các số chia hết cho 3 từ 1 -n là: " +tong);
+    </script>
+</body>
+
+</html>

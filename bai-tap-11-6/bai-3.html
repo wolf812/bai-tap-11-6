@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+</head>
+
+<body>
+    <script>
+        let arrInt = [];
+        let n;
+        n = +prompt("Nhập vào số phần tử của mảng");
+        for (let i = 0; i < n; i++) {
+            arrInt[i] = +prompt("Nhập vào số thứ " + (i + 1));
+
+        }
+        console.log(arrInt);
+
+        for (let i = 0; i < n; i++) {
+            for (let j = i + 1; j < n; j++) {
+                if (arrInt[i] < arrInt[j]) {
+                    let temp;
+                    temp = arrInt[i];
+                    arrInt[i] = arrInt[j];
+                    arrInt[j] = temp;
+
+                }
+
+            }
+        }
+        console.log(arrInt);
+        console.log("--------------------------------");
+        console.log("số lớn thứ 2 là" +arrInt[1]);
+
+    </script>
+
+</body>
+
+</html>

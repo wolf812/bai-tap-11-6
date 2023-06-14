@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+</head>
+
+<body>
+    <script>
+        //Đảo ngược chuỗi
+
+        let str = prompt("Nhập vào 1 chuỗi");
+
+        /*
+        Phương thức split() của String chia một chuỗi thành một mảng các chuỗi con:
+        ---split([separator], [limit]);
+                   + separator là dấu phân tách
+                   + Tham số limit là giới hạn. Nó chỉ định số chuỗi con được phân tách
+        */
+        let splitString = str.split('')
+
+        //reverse - đảo ngược mảng
+        let reverseArray = splitString.reverse();
+
+        // join:  là hàm dùng để nối các phần tử của mảng lại với nhau thành một chuỗi
+        let newString = reverseArray.join('');
+
+        console.log(newString);
+
+
+
+
+    </script>
+
+</body>
+
+</html>
